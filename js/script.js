@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const changeBgButton = document.getElementById('change-bg-button');
     changeBgButton.addEventListener('click', () => {
-        document.querySelector('body').style.backgroundColor = colors[currentColorIndex];
+        document.querySelector('main').style.backgroundColor = colors[currentColorIndex];
         currentColorIndex = (currentColorIndex + 1) % colors.length;
     });
 });
